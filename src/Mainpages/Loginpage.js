@@ -19,7 +19,7 @@ function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" to="/">
+      <Link color="inherit" href="/">
         Flexmarket
       </Link>{' '}
       {new Date().getFullYear()}
