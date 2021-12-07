@@ -1,7 +1,7 @@
 import * as React from 'react';
+
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -13,12 +13,14 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
+import Navbar from '../components/NavBar/Navbar'
+
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
+      <Link color="inherit" to="/">
+        Flexmarket
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -28,7 +30,7 @@ function Copyright(props) {
 
 const theme = createTheme();
 
-export default function SignInSide() {
+export default function Loginpage() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -41,23 +43,10 @@ export default function SignInSide() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Grid container component="main" sx={{ height: '100vh' }}>
-        <CssBaseline />
-        <Grid
-          item
-          xs={false}
-          sm={4}
-          md={7}
-          sx={{
-            backgroundImage: 'url(https://source.unsplash.com/random/?mobiles,computers,bikes,cycles,laptop,accesories)',
-            backgroundRepeat: 'no-repeat',
-            backgroundColor: (t) =>
-              t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        />
-        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+      <Navbar />
+      <Grid justifyContent="center" container component="main" sx={{ height: '100vh' }}>
+
+        <Grid position="absolute" item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
             sx={{
               my: 8,
@@ -65,6 +54,7 @@ export default function SignInSide() {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              
             }}
           >
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -74,6 +64,43 @@ export default function SignInSide() {
               Sign in
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
+            <Grid container
+              spacing={3}>
+              <Grid item
+                xs={25}
+                md={20}>
+                <Button color="info"
+                  fullWidth
+                  size="large"
+                  variant="contained">
+                  Login with Facebook
+                </Button>
+              </Grid>
+              <Grid item
+                xs={25}
+                md={20}>
+                <Button
+                  fullWidth
+                  color="error"
+                  size="large"
+                  variant="contained">
+                  Login with Google
+                </Button>
+              </Grid>
+            </Grid>
+            <Box
+              sx={{
+                pb: 1,
+                pt: 3
+              }}
+            >
+              <Typography
+                align="center"
+                color="textSecondary"
+                variant="body1">
+                or login with email address
+              </Typography>
+            </Box>
               <TextField
                 margin="normal"
                 required
@@ -113,9 +140,11 @@ export default function SignInSide() {
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
+                <Link href="/signup" variant="body2">
+                {"Don't have an account? Sign Up"}
                   </Link>
+
+                  
                 </Grid>
               </Grid>
               <Copyright sx={{ mt: 5 }} />

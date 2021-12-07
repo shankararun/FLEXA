@@ -1,13 +1,13 @@
 import React from 'react';
 import { Box, Button, Container, Grid, Link, Typography } from '@mui/material';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Navbar from '../components/NavBar/Navbar'
 
 const Signup = () => {
 
   return (
     <>
       <Navbar />
-      <Box>
+      <Box
         component="main"
         sx={{
           alignItems: 'center',
@@ -18,12 +18,6 @@ const Signup = () => {
       >
         <Container maxWidth="sm">
         
-            <Button
-              component="a"
-              startIcon={<ArrowBackIcon fontSize="small" />}
-            >
-              Dashboard
-            </Button>
             <Box sx={{ my: 3 }}>
               <Typography
                 color="textPrimary"

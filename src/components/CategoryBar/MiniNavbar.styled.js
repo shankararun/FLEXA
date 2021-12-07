@@ -9,6 +9,10 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
+  /* position: sticky; */
+  top:55px;
+  left:0;
+  width: 100%;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
