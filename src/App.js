@@ -9,6 +9,9 @@ import Accessories from './pages/Accessories';
 import Cameras from './pages/Cameras';
 import Cycles from './pages/Cycles';
 import Signup from './Mainpages/Signup';
+import ProductDetails from './Mainpages/ProductDetails'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -40,6 +43,9 @@ function App() {
             </Route>
 
             <Route exact path="/cycle" element={<Cycles />}>
+            </Route>
+
+            <Route exact path="/productDetails" element={<ProductDetails />}>
             </Route>
 
             <Route>

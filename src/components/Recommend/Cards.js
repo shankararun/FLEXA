@@ -6,10 +6,11 @@ import CardContent from '@mui/material/CardContent';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-
+import {Link} from 'react-router-dom';
 
 const Cards = (props) => {
   return (
+    <Link to="/productDetails">
     <>
     <Card sx={{ maxWidth: 345 }}>
       
@@ -36,6 +37,7 @@ const Cards = (props) => {
     </Card>
 
 </>
+</Link>
   );
 }
 
