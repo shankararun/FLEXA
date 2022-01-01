@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import Navbar from '../components/NavBar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 function Copyright(props) {
   return (
@@ -152,6 +153,7 @@ export default function Loginpage() {
           </Box>
         </Grid>
       </Grid>
+      <Footer />
     </ThemeProvider>
   );
 }
