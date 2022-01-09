@@ -1,5 +1,16 @@
-import React  from 'react';
-import {BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import ProfilePage from './Profile/ProfilePage';
+import Myads from './components/Myads/myads';
+import Categoryscreen from './Category/Categoryscreen';
+import ProductPage from './Product/ProductPage';
+import Dropdowne from './Dropdowne';
+import PropCatPage from './SubCat1/PropCatPage';
+import SpoCatPage from './SubCat2/SpoCatPage';
+import BikeCatPage from './SubCat3/BikeCatPage';
+import FunCatPage from './SubCat4/FunCatPage';
+import ProfileDashBoardPage from './ProfileDash/ProfileDashBoardPage';
+
 import Homepage from './Mainpages/Homepage';
 import Loginpage from './Mainpages/Loginpage';
 import Furniture from './pages/Furniture';
@@ -48,7 +59,27 @@ function App() {
             <Route exact path="/productDetails" element={<ProductDetails />}>
             </Route>
 
-            <Route>
+            <Route exact path="/profile" element={<ProfilePage />}></Route>
+
+          <Route exact path="/myads" element={<Myads />}></Route>
+
+          <Route exact path="/category" element={<Categoryscreen />}></Route>
+
+          <Route exact path="/product" element={<ProductPage />}></Route>
+
+          <Route exact path="/d" element={<Dropdowne />}></Route>
+
+          <Route exact path="/propertySubcategory" element={<PropCatPage />}></Route>
+
+          <Route exact path="/sportssubcategory" element={<SpoCatPage />}></Route>
+
+          <Route exact path="/bikessubcategory" element={<BikeCatPage />}></Route>
+
+          <Route exact path="/functionssubcategory" element={<FunCatPage />}></Route>
+
+          <Route exact path="/profiledashboard" element={<ProfileDashBoardPage />}></Route>
+
+          <Route>
             Error 404 - page not found!
             </Route>
         </Routes>
@@ -56,5 +87,6 @@ function App() {
     </div>
   );
 }
-
+      
 export default App;
+    

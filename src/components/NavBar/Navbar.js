@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import React from 'react';
-import {
-  Nav,NavLink, Bars, 
+import {  Nav,NavLink, Bars, 
   NavMenu,NavBtn,NavBtnLink} from './Navbar.styled';
 
 const Navbar = () => {

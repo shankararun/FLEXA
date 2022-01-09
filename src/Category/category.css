@@ -1,0 +1,56 @@
+.cat{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.rat{
+    position: relative;
+    top: 40px;
+    left: 450px;
+}
+.one{
+    position: absolute;
+    /* left: -500px; */
+    top: 150px;
+    bottom: 20px;
+}
+.two{
+    position: absolute;
+    /* left: -490px; */
+    top: 230px;
+    bottom: 20px;
+}
+.three{
+    position: absolute;
+    /* left: -490px; */
+    top: 300px;
+    bottom: 20px;
+
+}
+.four{
+    position:absolute;
+    /* left: -490px; */
+    top: 370px;
+    bottom: 20px;
+}
+.five{
+    position: absolute;
+    /* left: -490px; */
+    top: 440px;
+    bottom: 20px;
+}
+.six{
+    position: absolute;
+    /* left: -490px; */
+    top: 510px;
+    bottom: 20px;
+}
+.btn{
+    color: black;
+    width: 1200px;
+    border: 1px solid black;
+    background-color: #CCFFD4;
+    display: inline-block;
+    padding: 15px 32px;
+    border-radius: 12px;
+}

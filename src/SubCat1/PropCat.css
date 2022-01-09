@@ -1,0 +1,61 @@
+.cat1{
+    position: relative;
+    top: 10px;
+    left: 150px;
+}
+.rat1{
+    position: relative;
+    top: 40px;
+    left: 420px;
+}
+.one1{
+    position: absolute;
+    /* left: -500px; */
+    top: 150px;
+    bottom: 20px;
+}
+.two1{
+    position: absolute;
+    /* left: -490px; */
+    top: 230px;
+    bottom: 20px;
+}
+.three1{
+    position: absolute;
+    /* left: -490px; */
+    top: 300px;
+    bottom: 20px;
+
+}
+.four1{
+    position:absolute;
+    /* left: -490px; */
+    top: 370px;
+    bottom: 20px;
+}
+.five1{
+    position: absolute;
+    /* left: -490px; */
+    top: 440px;
+    bottom: 20px;
+}
+.six1{
+    position: absolute;
+    /* left: -490px; */
+    top: 510px;
+    bottom: 20px;
+}
+.btnn1{
+    color: black;
+    width: 1200px;
+    border: 1px solid black;
+    background-color: #CCFFD4;
+    display: inline-block;
+    padding: 15px 32px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btnn1:hover{
+background-color: blanchedalmond;
+color: chartreuse;
+}

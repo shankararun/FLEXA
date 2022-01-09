@@ -26,12 +26,12 @@ const ProductDetails = () => {
                 6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive feel.</p>
             <p><b>Contact Number:</b> 484848494 </p>
             <Link to="/cart" className="cart">Rent now</Link>
-
           </div>
 
         </div>
       </div>
       <Footer />
+
     </div>
   )
 }

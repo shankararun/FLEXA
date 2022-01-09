@@ -10,7 +10,7 @@ import {Link} from 'react-router-dom';
 
 const Cards = (props) => {
   return (
-    <Link to="/productDetails">
+    <Link to="/productDetails" style={{ textDecoration: 'none' }}>
     <>
     <Card sx={{ maxWidth: 345 }}>
       
