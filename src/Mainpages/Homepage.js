@@ -4,6 +4,9 @@ import MiniNavbar from '../components/CategoryBar/MiniNavbar'
 import Recommend from '../components/Recommend/Recommend'
 import Footer from '../components/Footer/Footer'
 
+//This is the homepage and it consists of the navbar, mininavbar and footer components. 
+//It has the route of '/homepage'
+
 const Homepage = () => {
   return (
     <div>
