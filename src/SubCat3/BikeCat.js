@@ -1,10 +1,14 @@
 import React from 'react'
-import { Button} from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import '../SubCat1/PropCat.css'
 import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
 import MopedIcon from '@mui/icons-material/Moped';
 import DirectionsBikeIcon from '@mui/icons-material/DirectionsBike';
 import Link from '@mui/material/Link'
+
+//This page consists of sub-categories of Bike Category
+//Icons are imported from material-ui
+//styled by PropCat.css
 
 export default function BikeCat() {
     return (

@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+//material ui is used 
+
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -13,11 +15,13 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import Navbar from '../components/NavBar/Navbar'
-import Footer from '../components/Footer/Footer'
+import Navbar from '../component/NavBar/Navbar'
+import Footer from '../component/Footer/Footer'
 
 function Copyright(props) {
   return (
+    //returns the copyrights details
+    
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
       {'Copyright © '}
       <Link color="inherit" href="/">
@@ -43,6 +47,8 @@ export default function Loginpage() {
   };
 
   return (
+    
+    //Themeprovider has the themes and colours
     <ThemeProvider theme={theme}>
       <Navbar />
       <Grid justifyContent="center" container component="main" sx={{ height: '100vh' }}>
@@ -65,7 +71,9 @@ export default function Loginpage() {
               Sign in
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
-            <Grid container
+            
+               {/* facebook login button */}
+              <Grid container
               spacing={3}>
               <Grid item
                 xs={25}
@@ -80,7 +88,9 @@ export default function Loginpage() {
               <Grid item
                 xs={25}
                 md={20}>
-                <Button
+                
+                  {/* google login button */}
+                  <Button
                   fullWidth
                   color="error"
                   size="large"
@@ -95,6 +105,7 @@ export default function Loginpage() {
                 pt: 3
               }}
             >
+              {/* Email login button */}
               <Typography
                 align="center"
                 color="textSecondary"

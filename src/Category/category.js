@@ -1,5 +1,5 @@
 import React  from 'react'
-import { Button} from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import HomeIcon from '@mui/icons-material/Home';
 import SportsVolleyballIcon from '@mui/icons-material/SportsVolleyball';
 import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
@@ -12,11 +12,13 @@ import  Link  from '@mui/material/Link';
 
 import "./category.css";
 
+//This Pages Represents the Category Screen for posting ads
+//This page uses Material ui icons
+//This page is styled by Category.css
+//This screen contains the buttons for each category
+
 function Category() { 
-    // const [isAuth,setIsAuth] = useState(true);
-    // if(!isAuth) {
-    //     return <Redirect to="../SubCat1/PropCat" />
-    // }
+    
     return (
         <MainScreen>
             <div className='cat'><h1 className='rat'>Select Your Category</h1>

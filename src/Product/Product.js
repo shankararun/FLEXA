@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './Product.css'
 import { Button , Form } from 'react-bootstrap'
+//This page consists of product renting view
+//Left side of the page consists of photo holder of the product
+//Right side of the page consists of  form for grtting info about the product and the conditions and duration of renting the product
 
 export class Product extends Component {
     state={

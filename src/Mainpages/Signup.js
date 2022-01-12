@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+//uses material ui and has navbar and footer components
+
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -11,8 +13,8 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
-import Navbar from '../components/NavBar/Navbar'
-import Footer from '../components/Footer/Footer'
+import Navbar from '../component/NavBar/Navbar'
+import Footer from '../component/Footer/Footer'
 
 function Copyright(props) {
   return (
@@ -32,6 +34,7 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function Loginpage() {
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
@@ -46,6 +49,7 @@ export default function Loginpage() {
     <ThemeProvider theme={theme}>
       <Navbar />
       <Grid justifyContent="center" container component="main" sx={{ height: '100vh' }}>
+      {/* contains the whole sigup buttons*/}
 
         <Grid position="absolute" item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
           <Box
@@ -80,6 +84,7 @@ export default function Loginpage() {
               </Typography>
             </Box> */}
 
+{/* all the details of the signup page*/}
             <TextField
                 margin="normal"
                 required

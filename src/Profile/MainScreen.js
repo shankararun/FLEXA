@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import "./Screen.css";
 
+//This page gives the layout for 'ProfileScreen.js'
+
 function MainScreen({ children, title }) {
   return (
     <div className="mainback">

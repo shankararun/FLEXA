@@ -1,11 +1,12 @@
 import React from 'react'
-import Navbar from '../components/NavBar/Navbar'
-import MiniNavbar from '../components/CategoryBar/MiniNavbar'
-import Recommend from '../components/Recommend/Recommend'
-import Footer from '../components/Footer/Footer'
+import Navbar from '../component/NavBar/Navbar'
+import MiniNavbar from '../component/CategoryBar/MiniNavbar'
+import Recommend from '../component/Recommend/Recommend'
+import Footer from '../component/Footer/Footer'
 
-//This is the homepage and it consists of the navbar, mininavbar and footer components. 
-//It has the route of '/homepage'
+//Homepage contains the navbar, mininavbar, recommend and footer components
+//It has the default route of './homepage'
+
 
 const Homepage = () => {
   return (
@@ -18,4 +19,4 @@ const Homepage = () => {
   )
 }
 
-export default Homepage;
+export default Homepage

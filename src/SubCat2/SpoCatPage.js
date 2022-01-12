@@ -1,12 +1,15 @@
 import React from "react";
-import Navbar from "../components/NavBar/Navbar";
+import Navbar from "../Components/Navbar";
 import SpoCat from "./SpoCat";
-import Footer from "../components/Footer/Footer";
+import Footer from "../Components/Footer";
+
+//This Page contains Header , spocat.js and Footer
+//consists of route of '/sportssubcategory'
 
 const SpoCatPage = () => {
     return (
         <><div><Navbar /></div><div><SpoCat /></div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><div><Footer /></div></>
-    );
+    )
 }
 
 export default SpoCatPage;

@@ -3,23 +3,21 @@ import { Col, Row , Button , Form } from 'react-bootstrap';
 import MainScreen from './MainScreen'
 import "./ProfileScreen.css";
 import Photo from '../addimage/Photo';
-// import { Redirect } from "react-router-dom"
+
+//This Page contains the details of the 'View/Edit Profile'
+//The Structure of this page is given by 'MainScreen.js'
+//The Page is Styled by 'ProfileScreen.css'
 
 
 const ProfileScreen = () => {
-    // const [isAuth, setIsAuth]= useState(true);
-    // if (!isAuth){
-    //     return <Redirect to="/Photo"/>
-    // }
+    
     return (
         <MainScreen title="EDIT PROFILE">
             <div>
                 <Row className='profilecontainer'>
-                    <Col md={6} 
-                    style = {{
+                    <Col md={6} >
+                        {/* This Column represents the form in the left side of the Page with the information of the Profile Holder*/}
                         
-                        
-                    }}>
                         <Form className='label'>
                             <Form.Group controlId="Name">
                                 <Form.Label>Name</Form.Label>
@@ -69,6 +67,7 @@ const ProfileScreen = () => {
                                 <Button type="submit" varient="primary" className='btn3'>Update</Button>   
                         </Form>
                     </Col>
+                    {/* This Column Holds the Photo of the Profile Holder on the right side of the page */}
                             <Col 
                             style={{
                                 display: "flex",

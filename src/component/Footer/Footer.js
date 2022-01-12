@@ -8,7 +8,6 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 function Footer() {
     return (
         <BottomNavigation>
-           
            <BottomNavigationAction label="Facebook" icon={<FacebookIcon style={{fill: "#3b5998"}}/>}/>
            <BottomNavigationAction label="Twitter" icon={<TwitterIcon style={{fill: "#1DA1F2"}}/>}/>
            <BottomNavigationAction label="Instagram" icon={<InstagramIcon style={{fill: "#C13584"}}/>}/>

@@ -1,8 +1,12 @@
 import {Link} from 'react-router-dom';
 import React from 'react'
-import '../components/MainPagesStyles/ProductDetails.css'
-import Navbar from '../components/NavBar/Navbar'
-import Footer from '../components/Footer/Footer'
+import '../component/MainPagesStyles/ProductDetails.css'
+import Navbar from '../component/NavBar/Navbar'
+import Footer from '../component/Footer/Footer'
+
+//here the productDetails components consists of the navbar and the footer.
+//It returns the product page with the product details
+//It has image of the product and it price..etc..,
 
 const ProductDetails = () => {
   return (
@@ -26,12 +30,12 @@ const ProductDetails = () => {
                 6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive feel.</p>
             <p><b>Contact Number:</b> 484848494 </p>
             <Link to="/cart" className="cart">Rent now</Link>
+
           </div>
 
         </div>
       </div>
       <Footer />
-
     </div>
   )
 }

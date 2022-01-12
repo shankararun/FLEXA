@@ -1,7 +1,7 @@
 import React from 'react'
-import MiniNavbar from '../components/CategoryBar/MiniNavbar'
-import Navbar from '../components/NavBar/Navbar'
-import Cards from '../components/Recommend/Cards'
+import MiniNavbar from '../component/CategoryBar/MiniNavbar'
+import Navbar from '../component/NavBar/Navbar'
+import Cards from '../component/Recommend/Cards'
 import 'bootstrap/dist/css/bootstrap.css';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';

@@ -1,10 +1,14 @@
 import React from 'react'
-import { Button} from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import '../SubCat1/PropCat.css'
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import GrassIcon from '@mui/icons-material/Grass';
 import SportsBasketballIcon from '@mui/icons-material/SportsBasketball';
 import Link from '@mui/material/Link'
+
+//This page is styled by propcat.css
+//This pages contains sub-categories of the Sports Categories
+//Icons in this pages are imported from material-ui
 
 export default function SpoCat() {
     return (

@@ -1,7 +1,10 @@
 import React from "react";
-import Navbar from "../components/NavBar/Navbar";
+import Navbar from "../Components/Navbar";
 import BikeCat from "./BikeCat";
-import Footer from "../components/Footer/Footer";
+import Footer from "../Components/Footer";
+
+//This page consists of header,BikeCat.js and Footer
+//consist of route '/bikessubcategory'
 
 const BikeCatPage = () => {
     return (

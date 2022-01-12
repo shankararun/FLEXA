@@ -1,12 +1,6 @@
 import React from 'react'
-import { Button} from 'react-bootstrap'
-// import HomeIcon from '@mui/icons-material/Home';
-// import SportsVolleyballIcon from '@mui/icons-material/SportsVolleyball';
-// import TwoWheelerIcon from '@mui/icons-material/TwoWheeler';
-// import CakeIcon from '@mui/icons-material/Cake';
-// import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
-// import MainScreen from '../Profile/MainScreen';
-// import ChairIcon from '@mui/icons-material/Chair';
+import { Button } from 'react-bootstrap'
+
 import LocalParkingIcon from '@mui/icons-material/LocalParking';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import HouseSidingIcon from '@mui/icons-material/HouseSiding';
@@ -15,6 +9,9 @@ import TerrainIcon from '@mui/icons-material/Terrain';
 import ApartmentIcon from '@mui/icons-material/Apartment';
 import "./PropCat.css";
 import  Link  from '@mui/material/Link';
+
+//This File displays the sub-categories available under the category Property
+//This file uses icons from Material-ui
 
 export default function PropCat() {
     return (

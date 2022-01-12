@@ -3,24 +3,28 @@
     top: 20px;
     left: 180px;
 }
+/*this changes the position of the entire content under class 'catp' in ProfileDashBoard.js*/
 .ratp{
     position: relative;
     top: 45px;
     left: 470px;
     bottom: 50px;
 }
+/*Changes the position of the Heading comes under the class 'ratp' in ProfileDashBoard.js*/
 .onep{
     position: absolute;
     left: -20px;
     top: 160px;
     bottom: 20px;
 }
+/*Adjusts the Position of First button under the class 'onep' in ProfileDashBoard.js*/
 .twop{
     position: absolute;
     left: -20px;
     top: 240px;
     bottom: 20px;
 }
+/*Adjusts the Position of Second button under the class 'twop' in ProfileDashBoard.js*/
 .threep{
     position: absolute;
     left: -13px;
@@ -28,12 +32,14 @@
     bottom: 20px;
 
 }
+/*Adjusts the Position of Third button under the class 'threep' in ProfileDashBoard.js*/
 .fourp{
     position:absolute;
     left: -20px;
     top: 400px;
     bottom: 20px;
 }
+/*Adjusts the Position of Fourth button under the class 'fourp' in ProfileDashBoard.js*/
 
 
 .btnp{
@@ -46,6 +52,7 @@
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+/*Adjusts the button size,color,shape with class name 'btnp' in ProfileDashBoard.js*/
 .btnp:hover{
 background-color: blanchedalmond;
 color: chartreuse;

@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
@@ -6,11 +5,16 @@ import CardContent from '@mui/material/CardContent';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import {Link} from 'react-router-dom';
+import DeleteIcon from '@mui/icons-material/Delete';
 
-const Cards = (props) => {
+//This page is used to view the products in form of cards in the screen of 'myads.js'
+//This page uses icons from material-ui
+
+
+
+
+const CArds = (props) => {
   return (
-    <Link to="/productDetails" style={{ textDecoration: 'none' }}>
     <>
     <Card sx={{ maxWidth: 345 }}>
       
@@ -22,7 +26,15 @@ const Cards = (props) => {
       />
   
         <IconButton aria-label="add to favorites">
+          <pre>          </pre>
           <FavoriteIcon />
+          
+          
+        </IconButton>  
+        
+        <IconButton aria-label="Delete">
+          <pre>    </pre>
+          <DeleteIcon />
         </IconButton>        
       
       <CardContent>
@@ -37,8 +49,7 @@ const Cards = (props) => {
     </Card>
 
 </>
-</Link>
   );
 }
 
-export default Cards
+export default CArds

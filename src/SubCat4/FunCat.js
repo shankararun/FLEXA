@@ -1,10 +1,15 @@
 import React from 'react'
-import { Button} from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import '../SubCat1/PropCat.css'
 import BlenderIcon from '@mui/icons-material/Blender';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import BoltIcon from '@mui/icons-material/Bolt';
 import  Link  from '@mui/material/Link';
+
+//This page consists of the sub-categories of Function Category
+//This page is styled by PropCat.css
+//icons imported from material-ui
+
 export default function FunCat() {
     return (
         <div className='cat1'><h1 className='rat1'>Select Your SubCategory</h1>

@@ -1,7 +1,10 @@
 import React from "react";
-import Navbar from "../components/NavBar/Navbar";
+import Navbar from "../Components/Navbar";
 import FunCat from "./FunCat";
-import Footer from "../components/Footer/Footer";
+import Footer from "../Components/Footer";
+
+//This page consists of header , FunCat.js and footer
+//consists of route '/functionssubcategory'
 
 const FunCatPage = () => {
     return (

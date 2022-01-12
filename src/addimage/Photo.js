@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-// import './App.css'
-import './Photo.css'
-// import './ph.css'
 
+import './Photo.css'
+
+//This file consists of the image holder
+// consists of the function  for fetching image from file system
 
 export class Photo extends Component {
     state={
