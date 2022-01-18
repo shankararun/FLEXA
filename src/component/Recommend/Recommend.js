@@ -1,14 +1,15 @@
 import React from 'react'
-import Cards from './Cards'
+// import Cards from './Cards'
 import 'bootstrap/dist/css/bootstrap.css';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import Row from 'react-bootstrap/Row';
+import GetList from './GetList';
 
 const Recommend = () => {
   return (
     <div>
       <div><h3>Recommendations</h3></div>
-      <container>
+      {/* <container>
         <Row>
           <Col >
             <Cards 
@@ -117,7 +118,8 @@ const Recommend = () => {
               imagesrc={"https://images.unsplash.com/photo-1559163499-413811fb2344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"}/>
           </Col>
         </Row>
-       </container>
+       </container> */}
+       <GetList />
     </div> 
   )
 }

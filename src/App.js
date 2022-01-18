@@ -22,83 +22,72 @@ import Cycles from './pages/Cycles';
 import Signup from './Mainpages/Signup';
 import ProductDetails from './Mainpages/ProductDetails'
 
+import {DataProvider} from "./ProductsAPI/GlobalState"
+
 //App.js contains various routes present in the entire page
 function App() {
   
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-                <Route exact path="/profile" element={<ProfilePage />}></Route>
+    <DataProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+                  <Route exact path="/profile" element={<ProfilePage />}></Route>
+                
+                  <Route exact path="/myads" element={<Myads />}></Route>
+                
+                  <Route exact path="/category" element={<Categoryscreen />}></Route>
+                
+                  <Route exact path="/product" element={<ProductPage />}></Route>
+                
+                  <Route exact path="/propertySubcategory" element={<PropCatPage />}></Route>
               
-                <Route exact path="/myads" element={<Myads />}></Route>
+                  <Route exact path="/sportssubcategory" element={<SpoCatPage />}></Route>
+                
+                  <Route exact path="/bikessubcategory" element={<BikeCatPage />}></Route>
               
-                <Route exact path="/category" element={<Categoryscreen />}></Route>
-              
-                <Route exact path="/product" element={<ProductPage />}></Route>
-              
-                <Route exact path="/propertySubcategory" element={<PropCatPage />}></Route>
-            
-                <Route exact path="/sportssubcategory" element={<SpoCatPage />}></Route>
-              
-                <Route exact path="/bikessubcategory" element={<BikeCatPage />}></Route>
-            
-                <Route exact path="/functionssubcategory" element={<FunCatPage />}></Route>
-              
-                <Route exact path="/profiledashboard" element={<ProfileDashBoardPage />}></Route>
+                  <Route exact path="/functionssubcategory" element={<FunCatPage />}></Route>
+                
+                  <Route exact path="/profiledashboard" element={<ProfileDashBoardPage />}></Route>
 
-                <Route exact path="/" element={<Homepage />}></Route>
+                  <Route exact path="/" element={<Homepage />}></Route>
 
-                <Route exact path="/login" element={<Loginpage />}>
-                </Route>
+                  <Route exact path="/login" element={<Loginpage />}>
+                  </Route>
 
-                <Route exact path="/signup" element={<Signup/>}>
-                </Route>
+                  <Route exact path="/signup" element={<Signup/>}>
+                  </Route>
 
-                <Route exact path="/phones" element={<Phones />}>
-                </Route>
+                  <Route exact path="/phones" element={<Phones />}>
+                  </Route>
 
-                <Route exact path="/furtinures" element={<Furniture />}> 
-                </Route>
+                  <Route exact path="/furtinures" element={<Furniture />}> 
+                  </Route>
 
-                <Route exact path="/laptops" element={<Laptops />}>
-                </Route>
+                  <Route exact path="/laptops" element={<Laptops />}>
+                  </Route>
 
-                <Route exact path="/accessories" element={<Accessories />}>
-                </Route>
+                  <Route exact path="/accessories" element={<Accessories />}>
+                  </Route>
 
-                <Route exact path="/cameras" element={<Cameras />}>
-                </Route>
+                  <Route exact path="/cameras" element={<Cameras />}>
+                  </Route>
 
-                <Route exact path="/cycle" element={<Cycles />}>
-                </Route>
+                  <Route exact path="/cycle" element={<Cycles />}>
+                  </Route>
 
-                <Route exact path="/productDetails" element={<ProductDetails />}>
-                </Route>
+                  <Route exact path="/productDetails" element={<ProductDetails />}>
+                  </Route>
 
-                <Route>
-                Error 404 - page not found!
-                </Route>
-        </Routes>
+                  <Route>
+                  Error 404 - page not found!
+                  </Route>
+          </Routes>
+          
         
-       
-      </BrowserRouter>
-    </div>
-    
-    
-
-      
-    
-
-    
-     
-      
-
-     
-      
-      
-     
-    
+        </BrowserRouter>
+      </div>
+    </DataProvider>
   );
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../component/NavBar/Navbar'
 import MiniNavbar from '../component/CategoryBar/MiniNavbar'
-import Recommend from '../component/Recommend/Recommend'
+import Products from '../component/Recommend/Products'
 import Footer from '../component/Footer/Footer'
 
 //Homepage contains the navbar, mininavbar, recommend and footer components
@@ -13,7 +13,7 @@ const Homepage = () => {
     <div>
       <Navbar />
       <MiniNavbar />
-      <Recommend />
+      <Products />
       <Footer />
     </div>
   )

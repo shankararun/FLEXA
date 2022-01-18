@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
       <Nav>
         {/* <NavLink to='/'>
-          <img src="https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGVuZ2luZWVycmluZyUyMHBuZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt='logo' />
+          <img src="" alt='logo' />
         </NavLink> */}
         <Bars />
         <NavMenu>
@@ -21,6 +21,9 @@ const Navbar = () => {
         </NavMenu>
         <NavBtn>
           <NavBtnLink to='/login'>Sign In</NavBtnLink>
+        </NavBtn>
+        <NavBtn>
+          <NavBtnLink to='/profiledashboard'>Profile</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
