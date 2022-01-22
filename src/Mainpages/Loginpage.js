@@ -1,7 +1,6 @@
-import * as React from 'react';
-
-//material ui is used 
-
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -18,6 +17,17 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Navbar from '../component/NavBar/Navbar'
 import Footer from '../component/Footer/Footer'
 
+async function loginUser(credentials) {
+ return fetch('http://127.0.0.1:8000/api/v1/token/login/', {
+   method: 'POST',
+   headers: {
+     'Content-Type': 'application/json'
+   },
+   body: JSON.stringify(credentials)
+ })
+   .then(data => data.json())
+}
+
 function Copyright(props) {
   return (
     //returns the copyrights details
@@ -33,28 +43,28 @@ function Copyright(props) {
   );
 }
 
-const theme = createTheme();
+export default function Login({ setToken }) {
+  const theme = createTheme();
+  const [username, setUserName] = useState();
+  const [password, setPassword] = useState();
 
-export default function Loginpage() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const token = await loginUser({
+      password,
+      username
     });
-  };
+    setToken(token);
+    window.location.href = '/'
+  }
 
-  return (
-    
-    //Themeprovider has the themes and colours
+  return(
     <ThemeProvider theme={theme}>
-      <Navbar />
+       <Navbar />
       <Grid justifyContent="center" container component="main" sx={{ height: '100vh' }}>
-
         <Grid position="absolute" item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-          <Box
+                    <Box
             sx={{
               my: 8,
               mx: 4,
@@ -72,8 +82,7 @@ export default function Loginpage() {
             </Typography>
             <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 1 }}>
             
-               {/* facebook login button */}
-              <Grid container
+              {/* <Grid container
               spacing={3}>
               <Grid item
                 xs={25}
@@ -88,8 +97,7 @@ export default function Loginpage() {
               <Grid item
                 xs={25}
                 md={20}>
-                
-                  {/* google login button */}
+
                   <Button
                   fullWidth
                   color="error"
@@ -98,7 +106,7 @@ export default function Loginpage() {
                   Login with Google
                 </Button>
               </Grid>
-            </Grid>
+            </Grid>  */}
             <Box
               sx={{
                 pb: 1,
@@ -110,18 +118,19 @@ export default function Loginpage() {
                 align="center"
                 color="textSecondary"
                 variant="body1">
-                or login with email address
+                Login with Email Address
               </Typography>
             </Box>
               <TextField
                 margin="normal"
                 required
                 fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                id="username"
+                label="username"
+                name="username"
+                autoComplete="username"
                 autoFocus
+                onChange={e => setUserName(e.target.value)}
               />
               <TextField
                 margin="normal"
@@ -132,6 +141,7 @@ export default function Loginpage() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                onChange={e => setPassword(e.target.value)}
               />
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
@@ -166,5 +176,10 @@ export default function Loginpage() {
       </Grid>
       <Footer />
     </ThemeProvider>
-  );
+  )
 }
+
+Login.propTypes = {
+  setToken: PropTypes.func.isRequired
+};
+

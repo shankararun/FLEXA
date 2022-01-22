@@ -5,7 +5,6 @@ const Products = () => {
 
   const state = useContext(GlobalState)
   const [products]  = state.productAPI.products
-  console.log(products)
 
   return (
     <>

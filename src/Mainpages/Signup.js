@@ -1,4 +1,5 @@
-import * as React from 'react';
+/* eslint-disable no-unused-vars */
+import React, {useState} from 'react';
 
 //uses material ui and has navbar and footer components
 
@@ -31,18 +32,38 @@ function Copyright(props) {
   );
 }
 
+
+
 const theme = createTheme();
 
 export default function Loginpage() {
   
+  const [username,setUsername] = useState("")
+  const [password,setPassword] = useState("")
+  const [email, setEmail] = useState("")
+  async function signUp()
+  {
+    let item={ email, username , password }
+    console.warn(item)
+
+    let result = await fetch("http://127.0.0.1:8000/api/v1/users/",{
+      method:'POST',
+      body: JSON.stringify(item),
+      headers:{
+        "Content-type":'application/json',
+        "Accept":'application/json'
+      }
+    })
+    result= await result.json()
+    console.log("results",result)
+  }
+
+
+
   const handleSubmit = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    // eslint-disable-next-line no-console
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
+    window.location.href = '/login'
   };
 
   return (
@@ -94,8 +115,10 @@ export default function Loginpage() {
                 name="fname"
                 autoComplete="fname"
                 autoFocus
+                onChange={(e)=>setUsername(e.target.value)}
               />
-              <TextField
+
+              {/* <TextField
                 margin="normal"
                 required
                 fullWidth
@@ -125,7 +148,8 @@ export default function Loginpage() {
                 name="address"
                 autoComplete="address"
                 autoFocus
-              />
+              /> */}
+
               <TextField
                 margin="normal"
                 required
@@ -135,6 +159,7 @@ export default function Loginpage() {
                 name="email"
                 autoComplete="email"
                 autoFocus
+                onChange={(e)=>setEmail(e.target.value)}
               />
               <TextField
                 margin="normal"
@@ -145,8 +170,10 @@ export default function Loginpage() {
                 type="password"
                 id="password"
                 autoComplete="current-password"
+                onChange={(e)=>setPassword(e.target.value)}
               />
-              <TextField
+
+              {/* <TextField
                 margin="normal"
                 required
                 fullWidth
@@ -155,8 +182,10 @@ export default function Loginpage() {
                 type="password"
                 id="cpassword"
                 autoComplete="cpassword"
-              />
+              /> */}
+
               <Button
+                onClick={signUp}
                 type="submit"
                 fullWidth
                 variant="contained"
@@ -175,7 +204,8 @@ export default function Loginpage() {
             </Box>
           </Box>
         </Grid>
-      </Grid>
+      </Grid> 
     </ThemeProvider>
   );
 }
+

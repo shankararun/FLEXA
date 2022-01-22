@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 //routes are imported from the js files
@@ -21,16 +22,23 @@ import Cameras from './pages/Cameras';
 import Cycles from './pages/Cycles';
 import Signup from './Mainpages/Signup';
 import ProductDetails from './Mainpages/ProductDetails'
-
 import {DataProvider} from "./ProductsAPI/GlobalState"
+
+import useToken from './Authentication/useToken';
+
 
 //App.js contains various routes present in the entire page
 function App() {
+  const { token, setToken } = useToken();
+
+  // if(!token) {
+  //   return <Loginpage setToken={setToken} />
+  // }
   
   return (
     <DataProvider>
       <div className="App">
-        <BrowserRouter>
+        
           <Routes>
                   <Route exact path="/profile" element={<ProfilePage />}></Route>
                 
@@ -52,7 +60,7 @@ function App() {
 
                   <Route exact path="/" element={<Homepage />}></Route>
 
-                  <Route exact path="/login" element={<Loginpage />}>
+                  <Route exact path="/login" element={<Loginpage setToken={setToken}/>}>
                   </Route>
 
                   <Route exact path="/signup" element={<Signup/>}>
@@ -84,8 +92,6 @@ function App() {
                   </Route>
           </Routes>
           
-        
-        </BrowserRouter>
       </div>
     </DataProvider>
   );
