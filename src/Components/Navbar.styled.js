@@ -2,23 +2,36 @@ import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+//contains the styled components 
 
+//style for the Nav class
 export const Nav = styled.nav`
-  background: #CCFFD4;
-  height: 55px;
+  background: #74e3dc;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-  /* Third Nav */
-  /* justify-content: flex-start; */
+  position: sticky;
+  top:0;
+  left:0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
 `;
 
+export const h2 = styled.h2`
+  color: green;
+`;
+
+//style for link present in Nav class
 export const NavLink = styled(Link)`
-  color: #4DFF4D;
+  !color: red;
   display: flex;
   align-items: center;
   text-decoration: none;
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
@@ -26,6 +39,7 @@ export const NavLink = styled(Link)`
     color: #15cdfc;
   }
 `;
+
 
 export const Bars = styled(FaBars)`
   display: none;
@@ -43,8 +57,8 @@ export const Bars = styled(FaBars)`
 
 export const NavMenu = styled.div`
   display: flex;
-  align-items: center;
-  margin-right: -24px;
+  align-items: flex-end;
+  /* margin-right: -24px; */
   /* Second Nav */
   /* margin-right: 24px; */
   /* Third Nav */
@@ -57,7 +71,7 @@ export const NavMenu = styled.div`
 
 export const NavBtn = styled.nav`
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin-right: 24px;
   /* Third Nav */
   /* justify-content: flex-end;
@@ -69,11 +83,12 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background: #256ce1;
+  background: #d2f7f5;
   padding: 10px 22px;
-  color: #fff;
+  color: #000000;
+  font-weight: bold;
   outline: none;
-  border: none;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
@@ -83,5 +98,6 @@ export const NavBtnLink = styled(Link)`
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
+    text-decoration: none;
   }
 `;

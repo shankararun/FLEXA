@@ -6,6 +6,7 @@ import ProfilePage from './Profile/ProfilePage';
 import Myads from './Components/myads';
 import Categoryscreen from './Category/Categoryscreen';
 import ProductPage from './Product/ProductPage';
+import ViewProfile from './ViewProfile/ViewProfile';
 
 import PropCatPage from './SubCat1/PropCatPage';
 import SpoCatPage from './SubCat2/SpoCatPage';
@@ -40,7 +41,9 @@ function App() {
       <div className="App">
         
           <Routes>
-                  <Route exact path="/profile" element={<ProfilePage />}></Route>
+                  <Route exact path="/viewprofile" element={<ViewProfile />}></Route>
+
+                  <Route exact path="/editprofile" element={<ProfilePage />}></Route>
                 
                   <Route exact path="/myads" element={<Myads />}></Route>
                 

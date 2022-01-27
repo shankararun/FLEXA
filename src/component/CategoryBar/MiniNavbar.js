@@ -23,7 +23,8 @@ const MiniNavbar = () => {
         <Bars />
     {/* consists of the list of subcategories */}
         <NavMenu>
-          <NavLink to='/phones' activeStyle>
+          <NavLink 
+          to='/phones' activeStyle>
             Mobile phones
           </NavLink>
           <NavLink to='/furtinures' activeStyle>

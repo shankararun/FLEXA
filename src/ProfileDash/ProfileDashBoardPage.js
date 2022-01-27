@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import ProfileDashboard from './ProfileDashboard'
-import Footer from '../Components/Footer'
+import Footer from '../component/Footer/Footer'
 //ProfileDashBoardPage contains the navbar,ProfileDashboard  and footer components
 //It has the default route of './ProfileDashBoard'
 

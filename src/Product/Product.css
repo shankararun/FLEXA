@@ -19,7 +19,7 @@
     text-align: center;
     position: relative;
     left: 200px;
-    font-family: 'Times New Roman', Times, serif ;
+    font-family: 'poppins',sans-serif;
     margin-top: 1rem;
     font-weight: bold;
   }
@@ -47,24 +47,39 @@
   }
   .image-upload2{
     position: relative;
+    font-family: 'poppins',sans-serif;
     margin: auto;
     width: 200px;
     height: 40px;
     top: 300px;
     left: 180px;
     padding-bottom: 10px;
-    background-color: #CCFFD4;
+    background-color: #F0F0F0;
+    border-color: black;
     color: black;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
+    transition: 0.5s;
+  }
+  .image-upload2:hover{
+    color: black;
+    background-color: #b0f7f2;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+    
   }
   .btn3{
     width: 300px;
     color: black;
-    border: 1px solid black;
-    background-color: #CCFFD4;
+    border: 1px solid #F0F0F0;
+    background-color: #F0F0F0;
     display: inline-block;
     padding: 15px 32px;
     
+  }
+  .btn3:hover{
+    color: black;
+    background-color: #b0f7f2;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+
   }

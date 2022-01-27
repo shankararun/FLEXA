@@ -4,56 +4,86 @@
     left: 180px;
 }
 /*this changes the position of the entire content under class 'catp' in ProfileDashBoard.js*/
+
 .ratp{
+    font-size: 60px;
+    
+    font-family: 'poppins',sans-serif;
     position: relative;
     top: 45px;
-    left: 470px;
+    left: 420px;
     bottom: 50px;
 }
 /*Changes the position of the Heading comes under the class 'ratp' in ProfileDashBoard.js*/
+
 .onep{
-    position: absolute;
-    left: -20px;
-    top: 160px;
-    bottom: 20px;
-}
-/*Adjusts the Position of First button under the class 'onep' in ProfileDashBoard.js*/
-.twop{
+    
     position: absolute;
     left: -20px;
     top: 240px;
     bottom: 20px;
 }
+/*Adjusts the Position of First button under the class 'onep' in ProfileDashBoard.js*/
+
+.twop{
+    position: absolute;
+    left: -20px;
+    top: 320px;
+    bottom: 20px;
+}
 /*Adjusts the Position of Second button under the class 'twop' in ProfileDashBoard.js*/
+
 .threep{
     position: absolute;
     left: -13px;
-    top: 320px;
+    top: 400px;
     bottom: 20px;
 
 }
 /*Adjusts the Position of Third button under the class 'threep' in ProfileDashBoard.js*/
+
 .fourp{
     position:absolute;
     left: -20px;
-    top: 400px;
+    top: 480px;
     bottom: 20px;
 }
 /*Adjusts the Position of Fourth button under the class 'fourp' in ProfileDashBoard.js*/
 
+.fivep{
+    position:absolute;
+    left: -20px;
+    top: 160px;
+    bottom: 20px;
 
-.btnp{
+}
+/*Adjusts the Position of Fifth button under the class 'fifthp' in ProfileDashBoard.js*/
+
+
+/* .dash{
     color: black;
     width: 1200px;
     border: 1px solid black;
-    background-color: #CCFFD4;
+    font-family: 'poppins',sans-serif;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 15px 32px;
+    background-color: #F0F0F0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+} */
+
+/* .btnp{
+    color: black;
+    width: 1200px;
+    border: 1px solid black;
+    background-color: #57DAD1;
     display: inline-block;
     padding: 15px 32px;
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
+} */
 /*Adjusts the button size,color,shape with class name 'btnp' in ProfileDashBoard.js*/
-.btnp:hover{
-background-color: blanchedalmond;
-color: chartreuse;
-}
+
+
+

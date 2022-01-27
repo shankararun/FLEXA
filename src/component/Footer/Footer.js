@@ -4,15 +4,15 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import YouTubeIcon from '@material-ui/icons/YouTube';
+import './Footer.css'
 
 function Footer() {
     return (
         <BottomNavigation>
-           <BottomNavigationAction label="Facebook" icon={<FacebookIcon style={{fill: "#3b5998"}}/>}/>
-           <BottomNavigationAction label="Twitter" icon={<TwitterIcon style={{fill: "#1DA1F2"}}/>}/>
-           <BottomNavigationAction label="Instagram" icon={<InstagramIcon style={{fill: "#C13584"}}/>}/>
-           <BottomNavigationAction label="YouTube" icon={<YouTubeIcon style={{fill: "#c4302b"}}/>}/>
-
+           <BottomNavigationAction className='foot' href="https://www.facebook.com/people/Flexa-Grps/100074660825435/" label="Facebook" icon={<FacebookIcon style={{fill: "#3b5998"}}/>}/>
+           <BottomNavigationAction className='foot' href="https://twitter.com/FlexaMarket" label="Twitter" icon={<TwitterIcon style={{fill: "#1DA1F2"}}/>}/>
+           <BottomNavigationAction className='foot' href="https://www.instagram.com/flexamarket/" label="Instagram" icon={<InstagramIcon style={{fill: "#C13584"}}/>}/>
+           <BottomNavigationAction className='foot' href="https://www.youtube.com/channel/UCDom-DRj2U_TnVvKyxlBHFQ" label="YouTube" icon={<YouTubeIcon style={{fill: "#c4302b"}}/>}/>
         </BottomNavigation>
 
     )

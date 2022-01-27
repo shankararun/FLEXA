@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import {
   Nav,NavLink, Bars, 
@@ -5,10 +6,8 @@ import {
 
 //components are imported from the navbar.styled.js file
 const logout = () => {
-  console.log("clear")
   window.sessionStorage.clear();
   window.location.href = '/';
-  
 }
 
 const Navbar = () => {
@@ -16,23 +15,25 @@ const Navbar = () => {
     <>
       <Nav>
         {/* <NavLink to='/'>
-          <img src="" alt='logo' />
+          <img src="./FMlogo.png" alt='logo' />
         </NavLink> */}
         <Bars />
-        <NavMenu>
-          <NavLink to='/' activeStyle>
+        
+          <NavLink style={{color:"green"}} to='/' activeStyle>
             <h2>Flexamarket</h2>
           </NavLink>
+        
+        <NavMenu>
+          <NavBtn >
+            <NavBtnLink to='/login'>SIGN IN</NavBtnLink>
+          </NavBtn>
+          <NavBtn>
+            <NavBtnLink to='/' onClick={logout}>LOG OUT</NavBtnLink>
+          </NavBtn>
+          <NavBtn>
+            <NavBtnLink to='/profiledashboard'>PROFILE</NavBtnLink>
+          </NavBtn>
         </NavMenu>
-        <NavBtn>
-          <NavBtnLink to='/login'>Sign In</NavBtnLink>
-        </NavBtn>
-        <NavBtn>
-          <NavBtnLink to='/' onClick={logout}>Log out</NavBtnLink>
-        </NavBtn>
-        <NavBtn>
-          <NavBtnLink to='/profiledashboard'>Profile</NavBtnLink>
-        </NavBtn>
       </Nav>
     </>
   );

@@ -10,10 +10,13 @@
 .page {
   width: 100%;
 }
+.label{
+  font-family: 'poppins',sans-serif;
+}
 .heading {
   font-size: 60px;
   /* font-family: "Ubuntu", sans-serif; */
-  font-family: "Work Sans", sans-serif;
+  font-family: 'poppins',sans-serif;
   padding: 5px 10px;
   
   

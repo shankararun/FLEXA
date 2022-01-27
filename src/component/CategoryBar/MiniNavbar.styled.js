@@ -5,8 +5,9 @@ import styled from 'styled-components';
 //uses styled components
 
 export const Nav = styled.nav`
-  background: #000000;
-  height: 30px;
+  background: #ebebea;
+  font-family: "Poppins", sans-serif;
+  height: 35px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
@@ -18,15 +19,21 @@ export const Nav = styled.nav`
 
 //for the link present in the navbar
 export const NavLink = styled(Link)`
-  color: #6AAB8E;
+  color: #000000;
   display: flex;
   align-items: center;
   text-decoration: none;
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
   padding: 0 1rem;
   height: 100%;
+  font-weight: bold;
   cursor: pointer;
   &.active {
     color: #15cdfc;
+    text-decoration: none;
+    font-weight: bold;
   }
 `;
 

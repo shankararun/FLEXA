@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "../Components/Navbar";
 import PropCat from './PropCat';
-import Footer from "../Components/Footer";
+import Footer from "../component/Footer/Footer";
 
 //This page consists of header, PropCat file and Footer
 //consists of the default route  '/propertySubcategory'

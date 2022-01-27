@@ -1,12 +1,11 @@
-/*This css file is used to style the Photo holder used in 'view/edit profile' and 'product' page */
-  .pages{
+.viewpages{
     height: 100vh;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .container1{
+  .viewcontainer1{
     position: relative;
     top: -120px;
     height: 500px;
@@ -14,13 +13,13 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
   }
-  .heading1{
+  .viewheading1{
     text-align: center;
     font-family: 'poppins',sans-serif;
     margin-top: 1rem;
     font-weight: bold;
   }
-  .img-holder1{
+  .viewimg-holder1{
     margin: auto;
     width: 300px;
     height: 300px;
@@ -28,9 +27,9 @@
     border-radius: 5px;
     margin-top: 1rem;
   }
-  .img1{
-    width: 300px;
-    height: 300px;
+  .viewimg1{
+    width: 500px;
+    height: 500px;
     object-fit:cover ;
   }
   #input[type="file"]{
@@ -42,20 +41,15 @@
     display: flex;
     justify-content: center;
   }
-  .image-uploadd{
-    font-family: 'poppins',sans-serif;
+  .image-upload1{
+
     margin: auto;
+    font-family: 'poppins',sans-serif;
     width: 200px;
     height: 40px;
-    background-color: #F0F0F0;
+    background-color: #CCFFD4;
     color: black;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    transition: 0.5s;
-  }
-  .image-uploadd:hover{
-    color: black;
-    background-color: #b0f7f2;
-    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
   }

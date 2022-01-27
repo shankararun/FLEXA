@@ -7,6 +7,7 @@
 /*this changes the position of the entire content under class 'cat1' in 'PropCat.js'*/
 .rat1{
     position: relative;
+    font-family: 'poppins',sans-serif;
     top: 40px;
     left: 420px;
 }
@@ -55,18 +56,44 @@
     bottom: 20px;
 }
 /*Adjusts the Position of sixth button under the class 'six1' in 'PropCat.js'*/
-.btnn1{
+.subcat{
     color: black;
     width: 1200px;
-    border: 1px solid black;
-    background-color: #CCFFD4;
+    border: 1px solid #F0F0F0;
+    background-color: #F0F0F0;
+    font-family: 'poppins',sans-serif;
+    border-radius: 30px;
     display: inline-block;
     padding: 15px 32px;
-    transition-duration: 0.4s;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.5s;
+    
 }
+
 /*Adjusts the button size,color,shape with class name 'btnn1' in 'PropCat.js'*/
-.btnn1:hover{
-background-color: blanchedalmond;
-color: chartreuse;
+.subcat:hover{
+    color:black ;
+    background-color:#b0f7f2 ;
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+}
+.custom-shape-divider-bottom-1642824782-SU {
+    position: absolute;
+    top: 580px;
+    
+    left: -140px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1642824782-SU svg {
+position: relative;
+display: block;
+width: calc(226% + 1.3px);
+height: 177px;
+transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1642824782-SU .shape-fill {
+fill:#86e6df;
 }

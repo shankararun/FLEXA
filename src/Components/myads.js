@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import Recommend from './recommend'
-import Footer from './Footer'
+import Footer from '../component/Footer/Footer'
 
 //This page contains header ,'Reccomend.js' and footer
 //This page is used to display the contents of 'Myads.js' in the profile Dashboard
@@ -13,7 +13,7 @@ const Myads = () => {
             <Navbar />
         </div><div>
                 <Recommend />
-            </div><div>
+            </div><div><br/><br/><br/><br/><br/><br/>
                 <Footer />
             </div></>
     )

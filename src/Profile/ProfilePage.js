@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
-import ProfileScreen from './ProfileScreen'
-import Footer from '../Components/Footer'
+import Profile from './Profile'
+import Footer from '../component/Footer/Footer'
 
 //This page contains header, ProfileScreen and Footer
 //It contains the default route "/profile"
@@ -11,7 +11,7 @@ const ProfilePage = ()  => {
         <><div>
             <Navbar />
         </div><div>
-                <ProfileScreen />
+                <Profile />
             </div><div>
                 <Footer />
             </div></>
