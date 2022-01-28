@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
 
-//uses material ui and has navbar and footer components
+/* material UI imports */
 
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
@@ -17,6 +17,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Navbar from '../component/NavBar/Navbar'
 import Footer from '../component/Footer/Footer'
 
+/*Copyright function returns the copyright details*/
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -36,6 +37,8 @@ function Copyright(props) {
 
 const theme = createTheme();
 
+
+/*Login function saves the username and password in the database using POST Method*/
 export default function Loginpage() {
   
   const [username,setUsername] = useState("")
@@ -67,7 +70,9 @@ export default function Loginpage() {
   };
 
   return (
+      {/* ThemeProvider component is imported from the material UI */}
     <ThemeProvider theme={theme}>
+          {/* Navbar component is imported from the navbar.js present in "src/component/Navbar/Navbar.js" */}
       <Navbar />
       <Grid justifyContent="center" container component="main" sx={{ height: '100vh' }}>
       {/* contains the whole sigup buttons*/}
