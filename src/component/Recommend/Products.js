@@ -1,8 +1,13 @@
+//useContext hook is used and it is imported from react
 import React, { useContext } from "react";
 import { GlobalState } from "../../ProductsAPI/GlobalState";
 import { ProductItem } from "./ProductItem";
+
+//material UI imports
 import { Container } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
+
+//contains the styles of the curve at the bottom of the page
 import "../../ProfileDash/Curve.css";
 
 const Products = () => {
@@ -10,7 +15,10 @@ const Products = () => {
   const [products] = state.productAPI.products;
 
   return (
+     {/* Container component is imported from material UI*/}
     <Container>
+    
+     {/* Grid component is imported from material UI*/}
       <Grid container spacing={2}>
         {products.map((product) => {
           return (
@@ -20,6 +28,8 @@ const Products = () => {
           );
         })}
       </Grid>
+
+     {/* the styles of the class is present in "src/ProfileDash/Curve.css" */}
       <div class="custom-shape-divider-bottom-1642824782-E">
         <svg
           data-name="Layer 1"
