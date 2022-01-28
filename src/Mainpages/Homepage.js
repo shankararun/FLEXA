@@ -12,9 +12,9 @@ const Homepage = () => {
     <div>
           {/* Navbar component is imported from the navbar.js present in "src/component/Navbar/Navbar.js" */}
       <Navbar />
-          {/* Navbar component is imported from the MiniNavbar.js present in "src/component/CategoryBar/MiniNavbar.js" */}
+          {/* MiniNavbar component is imported from the MiniNavbar.js present in "src/component/CategoryBar/MiniNavbar.js" */}
       <MiniNavbar />
-          {/* Navbar component is imported from the Products.js present in "src/component/Recommend/Products.js" */}
+          {/* products component is imported from the Products.js present in "src/component/Recommend/Products.js" */}
       <Products />
       <br />
       <br />
