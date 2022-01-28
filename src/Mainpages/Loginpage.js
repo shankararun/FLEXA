@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+
+/* material UI imports */
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -17,6 +19,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Navbar from '../component/NavBar/Navbar'
 import Footer from '../component/Footer/Footer'
 
+/*loginUser function checks for the authenticate login credential and post request is used to upload the credentials to the database*/
 async function loginUser(credentials) {
  return fetch('http://127.0.0.1:8000/api/v1/token/login/', {
    method: 'POST',
@@ -28,6 +31,7 @@ async function loginUser(credentials) {
    .then(data => data.json())
 }
 
+/*Copyright function returns the copyright details*/
 function Copyright(props) {
   return (
     //returns the copyrights details
@@ -43,6 +47,7 @@ function Copyright(props) {
   );
 }
 
+/*Login function checks for the username and password and generates tokens*/
 export default function Login({ setToken }) {
   const theme = createTheme();
   const [username, setUserName] = useState();
@@ -60,7 +65,9 @@ export default function Login({ setToken }) {
   }
 
   return(
+             {/* ThemeProvider component is imported from the material UI */}
     <ThemeProvider theme={theme}>
+          {/* Navbar component is imported from the navbar.js present in "src/component/Navbar/Navbar.js" */}
        <Navbar />
       <Grid justifyContent="center" container component="main" sx={{ height: '100vh' }}>
         <Grid position="absolute" item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
@@ -77,6 +84,7 @@ export default function Login({ setToken }) {
             <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
               <LockOutlinedIcon />
             </Avatar>
+          {/* Typography component is imported from the material UI */}
             <Typography component="h1" variant="h5">
               Sign in
             </Typography>
@@ -174,6 +182,7 @@ export default function Login({ setToken }) {
           </Box>
         </Grid>
       </Grid>
+          {/* Footer component is imported from the Footer.js present in "src/component/Footer/Footer.js" */}
       <Footer />
     </ThemeProvider>
   )
