@@ -15,6 +15,7 @@ import {
 const MiniNavbar = () => {
   return (
     <> 
+    /* Nav, Navlink and Navmenu are styles which are imported from mininavbar.styled.js (styled components) */
       <Nav>
         {/* <NavLink to='/'>
           <img src={require('')}
@@ -23,22 +24,33 @@ const MiniNavbar = () => {
         <Bars />
     {/* consists of the list of subcategories */}
         <NavMenu>
+    {/* routes to phones page */}
           <NavLink 
           to='/phones' activeStyle>
             Mobile phones
           </NavLink>
+    
+      {/* routes to furtinures page */}
           <NavLink to='/furtinures' activeStyle>
             Furtinures
           </NavLink>
+
+      {/* routes to laptops page */}
           <NavLink to='/laptops' activeStyle>
             Laptops
           </NavLink>
+
+      {/* routes to accessories page */}
           <NavLink to='/accessories' activeStyle>
             Accessories
           </NavLink>
+
+      {/* routes to cameras page */}
           <NavLink to='/cameras' activeStyle>
             Cameras and Lens
           </NavLink>
+
+      {/* routes to cycle page */}
           <NavLink to='/cycle' activeStyle>
             Bicycle
           </NavLink>
