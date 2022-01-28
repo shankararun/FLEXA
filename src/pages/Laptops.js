@@ -7,8 +7,13 @@ import Products from "../component/Recommend/Products";
 const Laptops = () => {
   return (
     <div>
+        {/* Navbar component is imported from the navbar.js present in "src/component/Navbar/Navbar.js" */}
       <Navbar />
+     
+    {/* MiniNavbar component is imported from the MiniNavbar.js present in "src/component/CategoryBar/MiniNavbar.js" */}  
       <MiniNavbar />
+    
+    {/* products component is imported from the Products.js present in "src/component/Recommend/Products.js" */}
       <Products />
       <br />
       <br />
@@ -31,6 +36,8 @@ const Laptops = () => {
       <br />
       <br />
       <br />
+    
+ {/* Footer component is imported from the Footer.js present in "src/component/Footer/Footer.js" */}
       <Footer />
     </div>
   );
