@@ -1,14 +1,20 @@
 import React from "react";
+
+//material UI imports
 import { BottomNavigation, BottomNavigationAction } from "@material-ui/core";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+
 import "./Footer.css";
 
 function Footer() {
   return (
+    {/* BottomNavigation component is imported from the material UI */}
       <BottomNavigation>
+    
+    {/* BottomNavigationAction component is imported from the material UI */}    
         <BottomNavigationAction
           className="foot"
           href="https://www.facebook.com/people/Flexa-Grps/100074660825435/"
