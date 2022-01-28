@@ -11,7 +11,9 @@ import Footer from "../component/Footer/Footer";
 const ProductDetails = () => {
   return (
     <div>
+        {/* Navbar component is imported from the navbar.js present in "src/component/Navbar/Navbar.js" */}
       <Navbar />
+       {/* the styles of the page are present in "src/MainPagesStyles/ProductDetails.css" */}
       <div className="detail">
         <img
           src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?ixlib=rb-1.2.1"
@@ -44,6 +46,7 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
+              {/* Footer component is imported from the Footer.js present in "src/component/Footer/Footer.js" */}
       <Footer />
     </div>
   );
