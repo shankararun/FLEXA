@@ -8,7 +8,13 @@ import Footer from "../component/Footer/Footer";
 
 const ProductPage = () => {
     return (
-        <><div><Navbar /></div><div><Product /></div><br/><br/><br/><br/><br/><br/><div><Footer /></div></>
+        {/* Navbar component is imported from the navbar.js present in "src/Components/Navbar.js" */}
+        <><div><Navbar /></div>
+        
+         {/* Product component is imported from the Component.js present in "src/Product/Product.js" */}
+        <div><Product /></div><br/><br/><br/><br/><br/><br/>
+        {/* Footer component is imported from the Footer.js present in "src/component/Footer/Footer.js" */}
+        <div><Footer /></div></>
         
     )
 }
