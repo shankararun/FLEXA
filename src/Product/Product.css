@@ -1,4 +1,6 @@
 /*This file is used to style 'Product.js'*/
+
+/* The following code is used to provide background for the profile picture */
 .pages2{
     height: 100vh;
     background-color: white;
@@ -15,6 +17,8 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
   }
+
+  /* The following code is used to adjust the heading of the picture under classname "heading2" */
   .heading2{
     text-align: center;
     position: relative;
@@ -23,6 +27,8 @@
     margin-top: 1rem;
     font-weight: bold;
   }
+
+  /* The following code is used for adjusting the size and positioning of the image */
   .img-holder2{
     margin: auto;
     width: 300px;
@@ -45,6 +51,8 @@
     display: flex;
     justify-content: center;
   }
+
+  /* The following code is used for styling the button below the picture in the classname "image-upload2" */
   .image-upload2{
     position: relative;
     font-family: 'poppins',sans-serif;
@@ -68,7 +76,11 @@
     box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
     
   }
+
+
 /* The following is responsible for the styling of the button  under the class name 'btn3' */
+
+
   .btn3{
     width: 300px;
     color: black;

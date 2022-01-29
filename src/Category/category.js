@@ -26,21 +26,33 @@ function Category() {
     return (
         <MainScreen>
             <div className='cat'><h1 className='rat'>Select Your Category</h1>
-                    //HomeIcon is imported from material-ui
+
+
+                    {/* HomeIcon is imported from material-ui */}
                     <div className='one'  ><pre>{<HomeIcon style={{fill: "#C13584"}}/>} <Link href="/propertySubcategory"> <Button className='btn'  > Properties </Button></Link></pre></div>
-                    //SportsVolleyballIcon is imported from material-ui
+
+
+                    {/* SportsVolleyballIcon is imported from material-ui */}
                     <div className='two' ><pre>{<SportsVolleyballIcon style={{fill: "#F9C5D5"}}/>}  <Link href="/sportssubcategory"><Button className='btn'  > Sports </Button></Link></pre></div>
-                    //TwoWheelerIcon is imported from material-ui
 
                     
+                    {/* TwoWheelerIcon is imported from material-ui */}                    
                     <div className='three' ><pre>{<TwoWheelerIcon style={{fill: "#FFE400"}}/>} <Link href="/bikessubcategory"> <Button className='btn'   > Bikes</Button></Link></pre></div>
-                    //CakeIcon is imported from material-ui
+
+
+                    {/* CakeIcon is imported from material-ui */}
                     <div className='four'  ><pre>{<CakeIcon style={{fill: "#519259"}}/>} <Link href="/functionssubcategory"> <Button className='btn'  >  Function & Party Hall</Button></Link></pre></div>
-                    //MiscellaneousServicesIcon is imported from material-ui
+
+
+                    {/* MiscellaneousServicesIcon is imported from material-ui */}
                     <div className='five' ><pre>{<MiscellaneousServicesIcon style={{fill: "#F90716"}}/>} <Link href="/product"> <Button className='btn'   > Services </Button></Link></pre></div>
-                    //ChairIcon is imported from material-ui
+
+
+                    {/* ChairIcon is imported from material-ui */}
                     <div className='six' ><pre>{<ChairIcon style={{fill: "#2C272E"}}/>} <Link href="/product"> <Button className='btn'  > Furniture </Button></Link></pre></div>
-                    //The following code is responsible for the Curve present in the bottom of the page
+
+                    
+                    {/* The following code is responsible for the Curve present in the bottom of the page */}
                     <div class="custom-shape-divider-bottom-1642824782-C">
                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>

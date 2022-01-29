@@ -17,7 +17,7 @@ import '../component/Footer/footer.css'
 function Footer() {
     return (
   
-    {/* BottomNavigation component is imported from the material UI */}
+    //  BottomNavigation component is imported from the material UI 
         <BottomNavigation>
         
            {/* BottomNavigationAction component is imported from the material UI */}    

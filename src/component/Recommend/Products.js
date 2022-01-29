@@ -15,7 +15,7 @@ const Products = () => {
   const [products] = state.productAPI.products;
 
   return (
-     {/* Container component is imported from material UI*/}
+      // Container component is imported from material UI
     <Container>
     
      {/* Grid component is imported from material UI*/}

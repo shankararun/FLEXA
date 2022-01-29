@@ -1,10 +1,26 @@
 /* eslint-disable no-unused-vars */
 import React, { Component, useContext } from "react";
-import { Col, Row, Button, Form } from "react-bootstrap";
+import { Col, Row,  Form } from "react-bootstrap";
+
+// The MainScreen.js gives the layout of this page
 import MainScreen from "./MainScreen";
+
+// This page is styled by 'ProfileScreen.js' in "src/Profile/ProfileScreen.css"
+
 import "./ProfileScreen.css";
 
+// The photo in this page is imported from 'ViewPhoto.js' in "src/ViewProfile/ViewProfile.js"
+
+
 import ViewPhoto from "../ViewProfile/ViewPhoto";
+
+
+
+
+
+// This page consists of the content of the 'view profile' page
+
+
 
 const ProfileScreen = () => {
   // constructor(props) {
@@ -36,6 +52,10 @@ const ProfileScreen = () => {
   // const [products]  = state.productAPI.products
 
   return (
+
+    // The following code is responsible for the form appearing in this page
+
+
     <MainScreen title="VIEW PROFILE">
       <div>
         <Row className="profilecontainer">
@@ -63,6 +83,10 @@ const ProfileScreen = () => {
               <div> </div>
             </Form>
           </Col>
+
+
+
+          {/* The following code is responsible for the Photo appearing o the right side of the screen */}
           <Col
             style={{
               display: "flex",
@@ -73,6 +97,12 @@ const ProfileScreen = () => {
             <ViewPhoto />
           </Col>
         </Row>
+
+
+        {/* The following code is responsible for the curve present in the bottom of the 'VIEW PROFILE' page */}
+
+        
+
         <div class="custom-shape-divider-bottom-1642824782-E">
           <svg
             data-name="Layer 1"

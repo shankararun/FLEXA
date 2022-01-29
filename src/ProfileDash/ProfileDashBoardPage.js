@@ -8,7 +8,23 @@ import Footer from '../component/Footer/Footer'
 function ProfileDashBoardPage() {
     return (
         <div>
-              <><div><Navbar /></div><div>< ProfileDashboard/></div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><div><Footer /></div></>
+                {/* Navbar component is imported from the navbar.js present in "src/Components/Navbar.js" */}
+
+              <><div><Navbar /></div>
+
+
+                {/* ProfileDashboard component is imported from the ProfileDashBoard.js present in "src/ProfileDash/ProfileDashboard.js" */}
+              
+              <div>< ProfileDashboard/></div>
+
+              
+              <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+              
+
+                {/* Footer component is imported from the Footer.js present in "src/component/Footer/Footer.js" */}
+              
+              <div><Footer /></div></>
+
         </div>
     )
 }

@@ -7,7 +7,28 @@ import Footer from "../component/Footer/Footer";
 //consists of the default route  '/propertySubcategory'
 const PropCatPage = () => {
     return (
-        <><div><Navbar /></div><div><PropCat /></div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><div><Footer/></div></>
+        <>
+
+
+        {/* Navbar component is imported from the navbar.js present in "src/Components/Navbar.js"  */}
+
+        <div><Navbar /></div>
+
+
+        {/* PropCat component is imported from the PropCat.js present in "src/SubCat1/PropCat.js" */} 
+
+        <div><PropCat /></div>
+
+        
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+        {/* Footer component is imported from the Footer.js present in "src/component/Footer/Footer.js" */} 
+
+        <div><Footer/></div>
+
+        
+        </>
         
     )
 }

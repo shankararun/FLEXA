@@ -21,8 +21,9 @@ width: calc(226% + 1.3px);
 height: 177px;
 transform: rotateY(180deg);
 }
-/* This is used to give colour of the curve */
 
+
+/* This is used to give colour of the curve */
 .custom-shape-divider-bottom-1642824782-C .shape-fill {
 fill:#86e6df;
 }

@@ -6,9 +6,18 @@ import './Photo.css'
 // consists of the function  for fetching image from file system
 
 export class Photo extends Component {
+
+    // This state provides the default image
+
     state={
         profileImg:'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png'
       }
+
+
+
+
+       // The following code reads the photo from file system
+
       imageHandler = (e) =>{
         const reader = new FileReader();
         reader.onload = () => {
@@ -18,6 +27,11 @@ export class Photo extends Component {
         }
         reader.readAsDataURL(e.target.files[0])
       }
+
+
+
+      // The following code displays the profile pic
+
     render() {
         const {profileImg} = this.state
         return (

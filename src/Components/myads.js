@@ -13,10 +13,11 @@ const Myads = () => {
       {/* Navbar component is imported from the navbar.js present in "src/Components/Navbar.js" */}
             <Navbar />
         </div><div>
-     {/* Recommend component is imported from the navbar.js present in "src/Components//Recommend.js" */}
+     {/* Recommend component is imported from the Recommend.js present in "src/Components//Recommend.js" */}
                 <Recommend />
             </div><div>
-      {/* Footerr component is imported from the navbar.js present in "src/Component/Footer/Footer.js" */}
+      {/* Footer component is imported from the Footer.js present in "src/component/Footer/Footer.js" */}
+      <br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 <Footer />
             </div></>
     )

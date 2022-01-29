@@ -2,11 +2,25 @@ import React, { Component } from "react";
 import { Col, Row, Button, Form } from "react-bootstrap";
 import MainScreen from "./MainScreen";
 import "./ProfileScreen.css";
+
+// The photohandler in this page is imported from Photo.js in "src/addimage/Photo.js" 
 import Photo from "../addimage/Photo";
+
+// axios is imported for api call
 import axios from "axios";
+
+// The curve in this page is styled with 'Shape-e.css'
 import "./Shape-e.css";
 
+// This page consists of the content of edit profile page
+//This page uses col,row,button and form from React-bootstrap
+
+
+
 export class Profile extends Component {
+
+  // The following code is responsible for http POST call for connecting to the api 
+
   constructor(props) {
     super(props);
 
@@ -28,9 +42,15 @@ export class Profile extends Component {
       });
   };
 
+
+
   render() {
     const { email, username, password } = this.state;
     return (
+
+      // The following code displays the form in "Edit profile page"
+
+
       <div>
         <MainScreen title="EDIT PROFILE">
           <div>
@@ -102,6 +122,11 @@ export class Profile extends Component {
                   </Button>
                 </Form>
               </Col>
+
+
+              {/* The following code displays the Photo present in the right side of the edit profile page */}
+
+
               <Col
                 style={{
                   display: "flex",
@@ -114,6 +139,12 @@ export class Profile extends Component {
             </Row>
           </div>
         </MainScreen>
+
+
+
+        {/* The following code is responsible for the curve present in the bottom of the 'EDIT PROFILE' page */}
+
+
         <div class="custom-shape-divider-bottom-1642824782-E">
           <svg
             data-name="Layer 1"
@@ -137,6 +168,8 @@ export class Profile extends Component {
             ></path>
           </svg>
         </div>
+
+
       </div>
     );
   }

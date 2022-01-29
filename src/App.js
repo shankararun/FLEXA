@@ -37,7 +37,7 @@ function App() {
   // }
   
   return (
-   {/* DataProvider component is imported from "src/component/ProductsAPI/GlobalState.js" */}
+//    /* DataProvider component is imported from "src/component/ProductsAPI/GlobalState.js" */
     <DataProvider>
       <div className="App">
         

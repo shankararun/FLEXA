@@ -70,7 +70,7 @@ export default function Loginpage() {
   };
 
   return (
-      {/* ThemeProvider component is imported from the material UI */}
+      //  ThemeProvider component is imported from the material UI 
     <ThemeProvider theme={theme}>
           {/* Navbar component is imported from the navbar.js present in "src/component/Navbar/Navbar.js" */}
       <Navbar />

@@ -6,7 +6,11 @@ import { Button , Form } from 'react-bootstrap'
 //Right side of the page consists of  form for grtting info about the product and the conditions and duration of renting the product
 
 export class Product extends Component {
+
+
     //The following code is responsible for getting photo from user's file system
+
+
     state={
         profileImg:'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png'
       }
@@ -41,7 +45,7 @@ export class Product extends Component {
         <div>
                 
                 
-                //The following form is responsible for getting the product details from the user
+                {/* The following form is responsible for getting the product details from the user */}
                 
                 
         <Form className='label'>
@@ -100,7 +104,9 @@ export class Product extends Component {
                         </Form>
         </div>
 
-        //The following code is responsible for the curve present in the end of this page
+
+
+        {/* The following code is responsible for the curve present in the end of this page */}
 
         <div class="custom-shape-divider-bottom-1642824782-E">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

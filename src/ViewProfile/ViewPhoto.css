@@ -1,3 +1,10 @@
+/*This file is used to style 'ViewProfile.js'*/
+
+
+/* The following code is used to provide background for the profile picture */
+
+
+
 .viewpages{
     height: 100vh;
     background-color: white;
@@ -13,12 +20,21 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.5);
   }
+
+
+
+
+  /* The following code is used to adjust the heading of the picture under classname "viewheading1" */
   .viewheading1{
     text-align: center;
     font-family: 'poppins',sans-serif;
     margin-top: 1rem;
     font-weight: bold;
   }
+
+
+
+  /* The following code is used for adjusting the size and positioning of the image */
   .viewimg-holder1{
     margin: auto;
     width: 300px;
@@ -41,6 +57,11 @@
     display: flex;
     justify-content: center;
   }
+
+
+
+
+  /* The following code is used for styling the button below the picture in the classname "image-upload1" */
   .image-upload1{
 
     margin: auto;

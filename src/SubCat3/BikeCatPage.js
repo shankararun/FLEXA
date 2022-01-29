@@ -8,7 +8,28 @@ import Footer from "../component/Footer/Footer";
 
 const BikeCatPage = () => {
     return (
-        <><div><Navbar /></div><div><BikeCat /></div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><div><Footer /></div></>
+        <>
+
+
+            {/* Navbar component is imported from the navbar.js present in "src/Components/Navbar.js"  */}
+
+            <div><Navbar /></div>
+
+
+            {/* BikeCat component is imported from the BikeCat.js present in "src/SubCat3/Footer.js" */}
+
+            <div><BikeCat /></div>
+
+
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+            {/* Footer component is imported from the Footer.js present in "src/component/Footer/Footer.js" */}
+
+            <div><Footer /></div>
+
+
+        </>
     )
 }
 

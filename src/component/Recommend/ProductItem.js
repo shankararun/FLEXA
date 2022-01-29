@@ -11,7 +11,7 @@ import {Link} from 'react-router-dom';
 export const ProductItem = (product) => {
 
   return (
-    {/* Nav component is imported from the react-router-dom */}
+    //  Nav component is imported from the react-router-dom 
       <Link to="/productDetails"  style={{ textDecoration: 'none' }}>
       <>
     {/* card component is imported from the material Ui */}

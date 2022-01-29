@@ -1,3 +1,8 @@
+/*This css file is used to style the curve in 'ProfileDashboard.js' */
+
+
+/*This is used to locate the position of the curve*/
+
 .custom-shape-divider-bottom-1642824782 {
     position: absolute;
     top: 550px;
@@ -9,6 +14,11 @@
     transform: rotate(180deg);
 }
 
+
+
+
+/* this is used to adjust  the design of the curve */
+
 .custom-shape-divider-bottom-1642824782 svg {
 position: relative;
 display: block;
@@ -16,6 +26,11 @@ width: calc(226% + 1.3px);
 height: 177px;
 transform: rotateY(180deg);
 }
+
+
+
+
+/* This is used to give colour of the curve */
 
 .custom-shape-divider-bottom-1642824782 .shape-fill {
 fill:#86e6df;

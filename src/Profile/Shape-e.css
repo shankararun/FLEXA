@@ -1,3 +1,10 @@
+/*This css file is used to style the curve in 'Category.js' */
+
+
+
+
+/*This is used to locate the position of the curve*/
+
 .custom-shape-divider-bottom-1642824782-E {
   position: absolute;
   top: 860px;
@@ -9,6 +16,11 @@
   transform: rotate(180deg);
 }
 
+
+
+
+/* this is used to adjust  the design of the curve */
+
 .custom-shape-divider-bottom-1642824782-E svg {
   position: relative;
   display: block;
@@ -16,6 +28,11 @@
   height: 177px;
   transform: rotateY(180deg);
 }
+
+
+
+
+/* This is used to give colour of the curve */
 
 .custom-shape-divider-bottom-1642824782-E .shape-fill {
   fill: #86e6df;

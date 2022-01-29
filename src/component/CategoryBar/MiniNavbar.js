@@ -15,7 +15,7 @@ import {
 const MiniNavbar = () => {
   return (
     <> 
-    /* Nav, Navlink and Navmenu are styles which are imported from mininavbar.styled.js (styled components) */
+     {/* Nav, Navlink and Navmenu are styles which are imported from mininavbar.styled.js (styled components)  */}
       <Nav>
         {/* <NavLink to='/'>
           <img src={require('')}
