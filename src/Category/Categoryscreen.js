@@ -7,7 +7,10 @@ import Footer from "../component/Footer/Footer";
 
 const Categoryscreen = () => {
     return (
-        <><div><Navbar /></div><div><Category /></div><div><Footer /></div></>
+        <><div><Navbar /></div>
+        <div><Category /></div>
+        {/* Footer component is imported from the Footer.js present in "src/Component/Footer/Footer.js" */}
+        <div><Footer /></div></>
     )
 }
 
