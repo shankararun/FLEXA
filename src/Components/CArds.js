@@ -1,4 +1,6 @@
 import * as React from "react";
+
+//imports from material UI
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
@@ -10,6 +12,8 @@ import Typography from "@mui/material/Typography";
 const CArds = (props) => {
   return (
     <>
+    
+    {/* Card component is imported from the material Ui */}
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           component="img"
@@ -21,11 +25,12 @@ const CArds = (props) => {
         {/* <IconButton aria-label="add to favorites">
           <pre>          </pre>
           <FavoriteIcon />
-          
-          
         </IconButton>   */}
 
+    {/* CardMedia component is imported from material UI */}
         <CardContent>
+          
+     {/* Typography is imported from material UI */}
           <Typography gutterBottom variant="h5" component="div">
             {props.name}
           </Typography>
