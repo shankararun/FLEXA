@@ -9,10 +9,10 @@ const Myads = () => {
       {/* Navbar component is imported from the navbar.js present in "src/Component/Navbar/Navbar.js" */}
             <Navbar />
         </div><div>
-     {/* Navbar component is imported from the navbar.js present in "src/Components/Recommend/Recommend.js" */}
+     {/* Recommend component is imported from the navbar.js present in "src/Components/Recommend/Recommend.js" */}
                 <Recommend />
             </div><div>
-      {/* Navbar component is imported from the navbar.js present in "src/Component/Footer/Footer.js" */}
+      {/* Footerr component is imported from the navbar.js present in "src/Component/Footer/Footer.js" */}
                 <Footer />
             </div></>
     )
