@@ -41,7 +41,7 @@ function App() {
     <DataProvider>
       <div className="App">
         
-/*Routes and route are imported from the react-router-dom which are used for routing to different pages in the website*/
+    {/*Routes and route are imported from the react-router-dom which are used for routing to different pages in the website*/}
           <Routes>
     
           {/* Homepage component is imported from "src/component/Mainpages/Homepage.js" */}
@@ -52,7 +52,7 @@ function App() {
                   <Route exact path="/login" element={<Loginpage setToken={setToken}/>}>
                   </Route>
 
-          {/* Navbar component is imported from "src/component/Mainpages/Signup.js" */}
+          {/* Signup component is imported from "src/component/Mainpages/Signup.js" */}
                   <Route exact path="/signup" element={<Signup/>}>
                   </Route>
 
