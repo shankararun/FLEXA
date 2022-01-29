@@ -10,10 +10,13 @@ import Footer from '../component/Footer/Footer'
 const Myads = () => {
     return (
         <><div>
+      {/* Navbar component is imported from the navbar.js present in "src/Components/Navbar.js" */}
             <Navbar />
         </div><div>
+     {/* Recommend component is imported from the navbar.js present in "src/Components//Recommend.js" */}
                 <Recommend />
-            </div><div><br/><br/><br/><br/><br/><br/>
+            </div><div>
+      {/* Footerr component is imported from the navbar.js present in "src/Component/Footer/Footer.js" */}
                 <Footer />
             </div></>
     )
