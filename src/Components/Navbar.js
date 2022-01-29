@@ -13,16 +13,22 @@ const logout = () => {
 const Navbar = () => {
   return (
     <>
+    
+        {/* Nav component is imported from the Navbar.styled.js */}
       <Nav>
         {/* <NavLink to='/'>
           <img src="./FMlogo.png" alt='logo' />
         </NavLink> */}
+    
+         {/* Bars component is imported from the Navbar.styled.js */}
         <Bars />
         
+         {/* NavLink component is imported from the Navbar.styled.js */}
           <NavLink style={{color:"green"}} to='/' activeStyle>
             <h2>Flexamarket</h2>
           </NavLink>
-        
+ 
+        {/* NavMenu component is imported from the Navbar.styled.js */}
         <NavMenu>
         
           <NavBtn>
