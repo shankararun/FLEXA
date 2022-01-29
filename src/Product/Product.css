@@ -68,6 +68,7 @@
     box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
     
   }
+/* The following is responsible for the styling of the button  under the class name 'btn3' */
   .btn3{
     width: 300px;
     color: black;
