@@ -1,6 +1,10 @@
 import React from 'react'
 import CArds from './CArds';
+
+//for bootstrap styles
 import 'bootstrap/dist/css/bootstrap.css';
+
+//imports from react-bootstrap
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 
@@ -11,9 +15,13 @@ const Recommend = () => {
   return (
     <div><br/>
       <div><h1 ><pre>                                    My Ads</pre></h1></div><br/>
+    {/* container component has styles imported from bootstrap.css file  */}
       <container>
+    {/* Row component is imported from react-bootstrap  */}
         <Row>
+          {/* Col component is imported from react-bootstrap */}
           <Col >
+        {/* CArds component is imported from CArds.js */}
             <CArds 
               name="iphone6"
               desc="Impressive iphone6 on hot sale"
@@ -53,6 +61,8 @@ const Recommend = () => {
         </Row>
         
        </container>
+
+    {/* For the curves present at the bottom  */}
        <div class="custom-shape-divider-bottom-1642824782-E">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
